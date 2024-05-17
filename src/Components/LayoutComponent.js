@@ -29,7 +29,7 @@ const LayoutComponent = () => {
         <ReactFlowProvider>
           <div className="reactflow-wrapper" ref={reactFlowWrapper}>
             <div className="main-container row g-0">
-              <div className="col-8">
+              <div className="col-12 col-md-8">
                 <MessagePanel
                   reactFlowWrapper={reactFlowWrapper}
                   nodes={nodes}
@@ -41,7 +41,7 @@ const LayoutComponent = () => {
                   onEdgesChange={onEdgesChange}
                 />
               </div>
-              <div className="col-4 border-start">
+              <div className="col-12 col-md-4 border-start">
                 {selectedNode ? (
                   <SettingsPanel
                     selectedNode={selectedNode}
